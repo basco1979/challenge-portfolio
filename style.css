@@ -137,9 +137,9 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__profile {
-  margin-right: 5%;
-  width: 20%;
-  height: auto;
+  margin-right: 10%;
+  width: 25%;
+  border-radius: 60%;
 }
 
 /*Sección About*/
@@ -544,5 +544,6 @@ Utiliza las referencias de los breakpoints @media abajo */
       display: none;
     }
   }
-  
-  
+  .tk{
+    /*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*/
+  }
