@@ -1,0 +1,488 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.container {
+    width: 94%;
+    margin: auto 1.5rem;
+}
+
+.menu {
+    margin: 3rem 1rem 1rem 0rem;
+}
+
+.menu__list__item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.menu__header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list__item {
+    margin: 10px;
+}
+
+/*Sección Title*/
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.title__bio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.title__subsection {
+    margin-bottom: .5rem;
+}
+
+.title__network {
+    display: flex;
+}
+
+.title__network__item {
+    margin-right: 1.5rem;
+}
+
+.title__profile {
+    margin-right: 5%;
+    width: 20%;
+    height: auto;
+}
+
+/*Sección About*/
+
+section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #EAF2FD;
+}
+
+.about__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.about__paragraph {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .6rem;
+    line-height: .7rem;
+    color: #464646;
+    margin-top: 1rem;
+}
+
+.signature {
+    margin: 1rem 0;
+}
+
+.skills__title {
+    margin-top: 1.2rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.skills__box {
+    height: 7rem;
+    width: 7rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {}
+
+.hobbies__title {
+    margin-top: 1.2rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.hobbies__box {
+    height: 7rem;
+    width: 7rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+}
+
+/* Experiencia Académica*/
+
+section.academic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #EAF2FD;
+}
+
+.academic__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.academic__courses__item__img {
+    height: 14rem;
+    width: 20rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    margin: .5rem;
+}
+
+.academic__courses__item__title, .academic__courses__item__subtitle{
+    margin-left: .5rem;
+}
+
+/* experiencia*/
+
+section.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.experience__section__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.experience__box {
+    display: flex;
+    justify-content: center;
+}
+
+.experience__info-container {
+    align-self: center;
+    margin-left: .5rem;
+}
+
+.experience__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+
+.experience__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1rem;
+    margin: .5rem 0;
+}
+
+.experiencia__botao--repo {
+    background: #FFFFFF;
+    color: #2A7AE4;
+    height: 2.5rem;
+    border: solid 0.5px #2A7AE4;
+    padding: .5rem;
+}
+
+
+
+.experience__botao--demo {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    height: 2.5rem;
+    border: none;
+    padding: .5rem;
+}
+
+/*Contacto*/
+
+section.formcontato {
+    background-color: #EAF2FD;
+}
+
+.formcontato__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__contacto {
+    display: flex;
+    padding: 2rem;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.formcontato__subtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.formcontato__form {
+    flex-direction: column;
+}
+
+.formcontato__input {
+    width: 100%;
+    height: 2.5rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: .5rem;
+}
+
+.formcontato__textarea {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 4px;
+    height: 8rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: .5rem;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.formcontato__botao {
+    display: flex;
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    background-color: #2A7AE4;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    border: none;
+    padding: 1rem;
+}
+.formcontato__botao :focus{
+    background-color: #FFFFFF;
+}
+
+/*footeer*/
+
+section.footer {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.footer__rodape {
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #464646;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sección sobre mi*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+    /*Contacto*/
+
+    /*Footer*/
+
+}
