@@ -1,259 +1,377 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portfolio</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Mi Portfolio</title>
+  </head>
 
-<body>
+  <body>
     <!-- Sección del Menú  -->
     <div class="tudo">
-        <section class="menu">
-            <header class="menu__header">
-                <div class="container">
-                    <div class="logo">
-                        <img src="assets\vector.png">
-                        <h3 class="menu__title">Sebastian Basconcelo</h3>
-                    </div>
-                    <nav class="navigation">
-                        <ul class="menu__list">
-                            <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                            <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                            <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                            <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                            <li class="menu__list__item"><a href="#contacto">sebastian.basco@outlook.com</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </section>
-
-        <!-- Sección del Header/Title/Hero -->
-        <section class="title">
-            <div class="title__div">
-                <img class="title__profile" src="assets\profile.png">
-                <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Sebastian Basconcelo y diseño paginas web</h2>
-                    <h3 class="title__subsection">Soy formado en la UNLAM y actualmente estoy participando del proyecto
-                        Oracle ONE en Alura Latam.</h3>
-                    <ul class="title__network">
-                        <!-- Pon los enlaces de tus redes sociales favoritas -->
-                        <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                        <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Currículum Vitae <img src="assets\arrow.png"></a>
-                        </li>
-                    </ul>
-                </div>
+      <section class="menu">
+        <header class="menu__header">
+          <div class="container">
+            <div class="logo">
+              <img src="assets\vector.png" />
+              <h3 class="menu__title">Sebastian Basconcelo</h3>
             </div>
-        </section>
+            <nav class="navigation">
+              <ul class="menu__list">
+                <li class="menu__list__item">
+                  <a href="#skills" class="menu__list__item__link">Skills</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="#hobbies" class="menu__list__item__link">Hobbies</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="#formacion" class="menu__list__item__link"
+                    >Formación</a
+                  >
+                </li>
+                <li class="menu__list__item">
+                  <a href="#xp" class="menu__list__item__link">Proyectos</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="#contacto" class="menu__list__item__link"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </section>
 
-        <!-- Sección sobre mi -->
-        <section class="about" id="sobre-mi">
-            <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
-                    velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
-                    Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
-                    velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
-                    Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas
-                    metus vitae, aliquet metus.</p>
-                <!-- Si quieres, pon tú firma acá! -->
-                <img src="assets\signature.png" class="signature">
+      <!-- Sección del Header/Title/Hero -->
+      <section class="title">
+        <div class="title__div">
+          <img class="title__profile" src="assets\profile.png" />
+          <div class="title__container">
+            <h2 class="title__bio">
+              Hola, mi nombre es Sebastian Basconcelo y soy desarrollador web
+            </h2>
+            <h3 class="title__subsection">
+              Soy formado en la UNLAM y me dedico al desarrollo web fullstack
+            </h3>
+            <ul class="title__network">
+              <!-- Pon los enlaces de tus redes sociales favoritas -->
+              <li class="title__network__item">
+                <a
+                  class="title__network__item__link"
+                  href="https://github.com/basco1979"
+                  >Github <img src="assets\arrow.png" />
+                </a>
+              </li>
+              <li class="title__network__item">
+                <a class="title__network__item__link" href=""
+                  >Linkedin <img src="assets\arrow.png"
+                /></a>
+              </li>
+              <li class="title__network__item">
+                <a class="title__network__item__link" href=""
+                  >Instagram <img src="assets\arrow.png"
+                /></a>
+              </li>
+              <li class="title__network__item">
+                <a class="title__network__item__link" href=""
+                  >Currículum Vitae <img src="assets\arrow.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección sobre mi -->
+      <section id="sobre-mi">
+        <div class="sobre">
+          <p class="sobre_p1" data-aos="fade-up">Sobre mí</p>
+          <p data-aos="fade-up" class="sobre_p2">
+            Nacido en Argentina, desde pequeño tuve un gran interes por todo lo
+            relacionado a la técnología.
+          </p>
+          <p data-aos="fade-up" class="sobre_p2">
+            En el año 2018 comence a estudiar la carrera de Desarrollador Web en
+            la Universidad de La Matanza, egresando en 2021.
+          </p>
+          <p data-aos="fade-up" class="sobre_p2">
+            Actualmente me encuentro mejorando mi formación como desarrollador
+            web en el proyecto Oracle ONE con Alura latam y a su vez realizando
+            un curso de backend en Codo a codo 4.0.
+          </p>
+          <img src="assets\signature.png" class="signature" />
+        </div>
+      </section>
+
+      <!-- Sección de Skills -->
+      <section class="skills" id="skills">
+        <h3 class="skills__title">Skills</h3>
+        <div class="skills__line">
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img"><img src="assets\htlm.png" /></li>
+              <li class="skills__name">HTML 5</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\js_icon.png" alt="" />
+              </li>
+              <li class="skills__name">Javascript</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\nodejs_icon.png" alt="" />
+              </li>
+              <li class="skills__name">Node JS</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\react_icon.png" alt="" />
+              </li>
+              <li class="skills__name">React</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\css_icon.png" alt="" />
+              </li>
+              <li class="skills__name">CSS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Hobbies -->
+      <section class="hobbies" id="hobbies">
+        <h3 class="hobbies__title">Hobbies</h3>
+        <div class="hobbies__line">
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\guitar_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Tocar bajo</li>
+            </ul>
+          </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\headphones_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Oir música</li>
+            </ul>
+          </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\tv_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Ver séries</li>
+            </ul>
+          </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\forkspoon_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Cocinar</li>
+            </ul>
+          </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\camera_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Tomar fotos</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Formación académica -->
+      <section class="academic" id="formacion">
+        <h2 class="academic__title">Formación académica</h2>
+        <div class="academic__courses">
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img src="assets\unlam.png" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Desarollador Web</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2018 - 2021</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!--Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img src="assets\alura_logo.png" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Formación Frontend</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>En curso</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img src="assets\codoacodo.png" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Big Data (Ciencia de Datos)</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2022</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Experiencia Profesional/Proyectos-->
+      <section class="experience" id="xp">
+        <h2 class="experience__section__title">Experiencia Profesional</h2>
+        <div class="experience__box">
+          <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+          <img class="experience__img" src="assets\secretcode_print.png" />
+          <div class="experience__info-container">
+            <h2 class="experience__title">Encriptador de texto</h2>
+            <h3 class="experience__text">Challenge Alura Codificador</h3>
+            <div class="experience__description">
+              <!-- Pon el enlace del proyecto en Github o GithubPages -->
+              <span class="experience__repo"
+                ><a
+                  href="https://github.com/alura-challenges/challenge-one-encriptador-latam"
+                  ><button class="experiencia__botao--repo">
+                    Repositorio
+                  </button></a
+                ></span
+              >
+              <span class="experience__demo"
+                ><a href=""
+                  ><button class="experience__botao--demo">Ver demo</button></a
+                ></span
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- Sección de Contacto -->
+      <section class="formcontato" id="contacto">
+        <div class="formcontato__contacto">
+          <div class="formcontato--esquerda">
+            <img class="formcontato__img" src="assets\contact_image.png" />
+          </div>
+          <div class="formcontato__text">
+            <h2 class="formcontato__title">Contacto</h2>
+            <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+            <h3 class="formcontato__subtext">
+              Complete el siguiente formulario y me pondré en contacto con usted
+              lo antes posible.
+            </h3>
+            <form class="formcontato__form form" id="form" action="">
+              <input
+                class="formcontato__input"
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+              />
+              <input
+                class="formcontato__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <input
+                class="formcontato__input"
+                type="text"
+                name="asunto"
+                placeholder="Asunto"
+              />
+              <textarea
+                class="formcontato__textarea"
+                rows="5"
+                cols="40"
+                id="mensagem"
+                name="mensaje"
+                placeholder="Mensaje"
+              ></textarea>
+              <button class="formcontato__botao" type="submit" name="Submit">
+                Enviar
+              </button>
+            </form>
+            <a href="mailto:sebastian.basco@outlook.com" id="trucazo"></a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección de Skills -->
-        <section class="skills" id="skills">
-            <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Hobbies -->
-        <section class="hobbies" id="hobbies">
-            <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar bajo</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cocinar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tomar fotos</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-            <h2 class="academic__title">Formación académica</h2>
-            <div class="academic__courses">
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Análisis de datos</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2018 - UFPR</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!--Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Formación en UX Design</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2019 - Alura</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Posgrado en diseño</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>En curso - UFRJ</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Experiencia Profesional/Proyectos-->
-        <section class="experience" id="xp">
-            <h2 class="experience__section__title">Experiencia Profesional</h2>
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\secretcode_print.png">
-                <div class="experience__info-container">
-                     <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                        <span class="experience__repo"><a
-                                href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button
-                                    class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver
-                                    demo</button></a></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
-                        usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                            placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Sebastian Basconcelo</p>
-                <p>2023</p>
-            </div>
-        </section>
+      <!-- Sección de Footer -->
+      <section class="footer">
+        <div class="footer__rodape">
+          <p>Desarrollado por Sebastian Basconcelo</p>
+          <p>2023</p>
+        </div>
+      </section>
     </div>
     <!-- Script del documento JavaScript -->
     <script src="validacion.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const $form = document.querySelector("#form");
+      const $buttonMailto = document.querySelector("#trucazo");
+
+      $form.addEventListener("submit", handleSubmit);
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        $buttonMailto.setAttribute(
+          "href",
+          `mailto:sebastian.basco@outlook.com?subject=nombre ${form.get("nombre")}  correo ${form.get("email")}&body=${form.get("mensaje")}`
+        );
+        $buttonMailto.click();
+      }
+    </script>
+  </body>
 </html>
